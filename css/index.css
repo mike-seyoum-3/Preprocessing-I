@@ -147,12 +147,6 @@ header {
   border-bottom: 1px solid silver;
   padding-bottom: 15px;
 }
-@media (max--width: 500px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .container {
   margin: 0 auto;
   padding: 0;
@@ -160,6 +154,14 @@ header {
   height: 220%;
   background-color: black;
   color: azure;
+}
+@media (max-width: 500px) {
+  .container {
+    background-color: forestgreen;
+    margin: auto;
+    width: 100%;
+    height: 300%;
+  }
 }
 h1 {
   font-size: 40px;
@@ -169,10 +171,26 @@ h1 {
   padding-left: 6%;
   padding-top: 3%;
 }
+@media (max-width: 500px) {
+  h1 {
+    background-color: forestgreen;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
 .top-content {
   display: flex;
   padding-bottom: 50px;
   padding-top: 4%;
+}
+@media (max-width: 500px) {
+  .top-content {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 8%;
+  }
 }
 .img-id1 {
   border-radius: 20%;
@@ -182,11 +200,29 @@ h1 {
   width: 50%;
   height: 50%;
 }
+@media (max-width: 500px) {
+  .img-id1 {
+    flex-direction: column;
+    width: 100%;
+    border-radius: auto;
+    Padding-left: 0;
+  }
+}
 .inner-content {
   width: 60%;
   padding-left: 7%;
   padding-top: 4%;
   padding-right: 5%;
+}
+@media (max-width: 500px) {
+  .inner-content p {
+    width: 150%;
+    font-size: 18px;
+    Padding-left: 0;
+    height: 2%;
+    word-break: inherit;
+    line-height: 1.6;
+  }
 }
 header h2 {
   font-size: 40px;
@@ -203,6 +239,14 @@ header p {
   display: flex;
   padding-top: 5%;
 }
+@media (max-width: 500px) {
+  .middle-content {
+    flex-direction: column-reverse;
+    width: 100%;
+    border-radius: auto;
+    Padding-left: 0;
+  }
+}
 .middle-content .img-id2 {
   border-radius: 20%;
   font-size: 20px;
@@ -210,6 +254,12 @@ header p {
   width: 20%;
   height: 5%;
   margin-left: 7%;
+}
+@media (max-width: 500px) {
+  .middle-content .img-id2 {
+    width: 50%;
+    border-radius: auto;
+  }
 }
 ul {
   font-size: 25px;
@@ -220,6 +270,12 @@ ul ol {
   line-break: inherit;
   lighting-color: dodgerblue;
 }
+@media (max-width: 500px) {
+  ul ol {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
 .middle-content h2 {
   margin-left: 30px;
   font-size: 42px;
@@ -228,10 +284,40 @@ ul ol {
 address {
   font-size: 20px;
   margin-left: 20px;
+  line-height: 1.6;
+}
+@media (max-width: 500px) {
+  address {
+    font-size: 15px;
+    padding-top: 20%;
+    text-align: center;
+    line-height: 1.7;
+    line-break: loose;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.7;
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+  }
 }
 .container header nav a {
   color: brown;
   word-spacing: 70%;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    flex-direction: column;
+    width: 20%;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-between;
+    word-spacing: 40%;
+  }
 }
 .container header nav {
   width: 80%;
@@ -239,4 +325,15 @@ address {
   margin-left: 16%;
   text-align: right;
   justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    flex-direction: column;
+    width: 20%;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 36%;
+    word-spacing: 40%;
+  }
 }
